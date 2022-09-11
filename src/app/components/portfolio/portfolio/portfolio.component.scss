@@ -1,4 +1,4 @@
-@import './../../../../utility/utility.scss';
+@import "./../../../../utility/utility.scss";
 .dark {
   background-color: black;
   color: white;
@@ -13,7 +13,7 @@
   }
   .projects-container {
     -webkit-filter: $pinkWebkit;
-      filter: $pinkFilter;
+    filter: $pinkFilter;
     margin-top: 400px;
     display: flex;
     justify-content: center;
