@@ -1,0 +1,77 @@
+<section [ngClass]="{'dark': filler.gettheme() === 'dark'}">
+  <h5>Get To Know</h5>
+  <h1 style="color: #b44ab0;">About Me</h1>
+  <div class="about-section">
+    <div class="mypic">
+      <img src="./assets/mypic2.png" alt="mypic" />
+    </div>
+    <div class="about">
+      <h2>
+        Greetings, I'm Harsh. I work at Dapplooker as a front-end developer. I'm
+        a driven individual who is eager to learn new technologies in order to
+        advance daily. In order to learn more about various technologies and
+        make a major contribution to the industry, I'm seeking for challenging
+        possibilities in the IT sector. React Js, Redux, Angular, Bootstrap, and
+        other programming languages and frameworks are a few things I have
+        experience with.
+      </h2>
+    </div>
+  </div>
+
+  <h1 class="skills">SKILLS</h1>
+  
+  <div class="main-skills">
+    <a
+      class="emoji"
+      *ngIf="this.filler.fillerWidth > 50 && showSkillBar"
+      href="https://www.freeiconspng.com/img/45553"
+      title="Image from freeiconspng.com"
+      ><img
+        src="https://www.freeiconspng.com/uploads/emoticons-whatsapp-photo-png-hd-12.png"
+        alt="Emoticons Whatsapp Photo PNG HD"
+    /></a>
+    <a
+      class="emoji"
+      *ngIf="
+        this.filler.fillerWidth > 0 &&
+        this.filler.fillerWidth < 40 &&
+        showSkillBar
+      "
+      href="https://www.freeiconspng.com/img/45551"
+      title="Image from freeiconspng.com"
+      ><img
+        src="https://www.freeiconspng.com/uploads/high-resolution-emoticons-whatsapp-png-clipart-10.png"
+        alt="High Resolution Emoticons Whatsapp Png Clipart"
+    /></a>
+    <a
+      class="emoji"
+      *ngIf="this.filler.fillerWidth > 80 && showSkillBar"
+      href="https://www.freeiconspng.com/img/45541"
+      title="Image from freeiconspng.com"
+      ><img
+        src="https://www.freeiconspng.com/uploads/emoticons-whatsapp-png-free-vector-download-0.png"
+        alt="Emoticons Whatsapp Png Free Vector Download"
+    /></a>
+    <div [ngClass]="{'skill-meter-white': filler.gettheme() === 'dark'}" *ngIf="showSkillBar" class="skill-meter">
+      <span
+        class="filler"
+        style="width: {{ this.filler.fillerWidth }}%"
+        class="skill-fill"
+      ></span>
+    </div>
+    <!-- <h1 *ngIf="showSkillBar">{{skillFill}}</h1> -->
+    <span class="skill-tap" *ngIf="!showSkillBar"
+      >&#128072; tap or hover on any skill</span
+    >
+    <div class="skills-container">
+      <app-capsule
+        (mouseenter)="showSkillBar = true"
+        (mouseleave)="showSkillBar = false"
+        (parentComponent)="parentComponent($event)"
+        class="skill"
+        *ngFor="let skill of skills"
+        [skillCapsule]="skill"
+      ></app-capsule>
+    </div>
+  </div>
+</section>
