@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { FillerService } from 'src/app/filler.service';
 
 @Component({
-  selector: 'app-experience',
-  templateUrl: './experience.component.html',
-  styleUrls: ['./experience.component.scss'],
+  selector: 'app-experience2',
+  templateUrl: './experience2.component.html',
+  styleUrls: ['./experience2.component.scss'],
 })
-export class ExperienceComponent implements OnInit {
+export class Experience2Component implements OnInit {
   constructor(public filler: FillerService) {}
 
   ngOnInit(): void {}
