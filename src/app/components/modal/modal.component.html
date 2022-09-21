@@ -1,0 +1,8 @@
+<div class="main" [ngClass]="{'dark': filler.gettheme() === 'dark'}">
+    <ul>
+        <li (click)="scrollTo('about')">ABOUT</li>
+      <li (click)="scrollTo('contact')">CONTACT</li>
+      <li (click)="scrollTo('experience')">EXPERIENCE</li>
+      <li (click)="scrollTo('projects')">PROJECTS</li>
+    </ul>
+</div>

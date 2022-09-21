@@ -17,17 +17,18 @@
   <button (click)="themeHandler()" class="theme-btn">change theme</button>
   <div class="nav">
     <ul>
-      <li>ABOUT</li>
-      <li>CONTACT</li>
-      <li>EXPERIENCE</li>
-      <li>PROJECTS</li>
+      <li (click)="scrollTo('about')">ABOUT</li>
+      <li (click)="scrollTo('contact')">CONTACT</li>
+      <li (click)="scrollTo('experience')">EXPERIENCE</li>
+      <li (click)="scrollTo('projects')">PROJECTS</li>
     </ul>
   </div>
-  <div class="hamburger-icon">
+  <div (click)="modalHandler()" class="hamburger-icon">
     <img src="./assets/hamburger.png" alt="" />
   </div>
   <h5>Hello, I'm</h5>
-  <h1>Harsh</h1>
+  <h1 data-aos="fade-up"
+  data-aos-duration="2000">Harsh</h1>
 
   <h2>A Frontend Developer</h2>
 
@@ -42,7 +43,10 @@
     <button role="button">Let's Talk</button>
   </div>
 
-  <div class="my-img">
+  <div data-aos="fade-up"
+  data-aos-duration="2000" class="my-img">
     <img src="./assets/mypic.png" alt="" />
   </div>
+
+  <app-modal *ngIf="filler.showModal" class="modal"></app-modal>
 </section>

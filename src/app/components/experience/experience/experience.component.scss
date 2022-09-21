@@ -1,5 +1,7 @@
 @import "./../../../../utility/utility.scss";
 .main {
+  border-left: 10px solid #b44ab0;
+  border-right: 10px solid #b44ab0;
   padding-top: 400px;
   display: flex;
   flex-direction: column;
@@ -58,7 +60,7 @@
         }
         h2 {
           position: absolute;
-          color: white;
+          color: black;
           top: -40px;
           left: 10px;
         }
@@ -87,14 +89,25 @@
       }
     }
   }
+  @media screen and (max-width: 500px) {
+    padding-top: 100px;
+  }
 }
 
 .dark {
+  color: white;
   background-color: black;
   h1 {
     color: white;
   }
-  @media screen and (max-width: 500px) {
-    padding-top: 100px;
+  .first{
+    .right{
+      .github{
+        h2{
+          color: white;
+        }
+      }
+    }
   }
+  
 }

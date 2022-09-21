@@ -25,7 +25,8 @@
      
     </div>
     <div class="right">
-      <form [formGroup]="msgForm" (ngSubmit)="submitForm()" action="">
+      <form data-aos="fade-up"
+      data-aos-duration="2000" [formGroup]="msgForm" (ngSubmit)="submitForm()" action="">
         <div class="input-wrapper">
         <input formControlName="from_name" type="text" placeholder="Your Full Name" />
         <!-- <p class="error" *ngIf="

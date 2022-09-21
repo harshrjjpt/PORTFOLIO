@@ -6,6 +6,7 @@ import { Injectable } from '@angular/core';
 export class FillerService {
   fillerWidth: number = 0;
   themeclass: string = 'light';
+  showModal: boolean = false;
 
   gettheme() {
     return localStorage.getItem('mytheme');

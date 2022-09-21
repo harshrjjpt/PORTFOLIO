@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FillerService } from './filler.service';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-root',
@@ -12,6 +13,7 @@ export class AppComponent implements OnInit {
   title = 'my-portfolio';
 
   ngOnInit(): void {
+    AOS.init();
     if (!localStorage.getItem('mytheme')) {
       localStorage.setItem('mytheme', 'dark');
     }

@@ -1,6 +1,8 @@
 @import "./../../../utility/utility.scss";
 .main {
-  color: white;
+  border-left: 10px solid #b44ab0;
+  border-right: 10px solid #b44ab0;
+  color: black;
   padding-top: 200px;
   display: flex;
   flex-direction: column;
@@ -28,6 +30,9 @@
         flex-direction: column;
       width: 60%;
       color: white;
+      h2,p{
+        color: black;
+      }
       @media screen and (max-width: 700px){
         flex-direction: column;
         align-items: center;
@@ -148,5 +153,13 @@
 }
 
 .dark {
+  color: white;
   background-color: black;
+  .sub{
+    .right{
+      h2,p{
+        color: white                                                                                                                                                                                                                                                                                                                                    ;
+      }
+    }
+  }
 }

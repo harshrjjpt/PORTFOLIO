@@ -18,6 +18,15 @@ export class HeaderComponent implements OnInit {
     console.log(localStorage.getItem('mytheme'));
   };
 
+  modalHandler() {
+    this.filler.showModal = !this.filler.showModal;
+    console.log(this.filler.showModal);
+  }
+
+  scrollTo(page) {
+    document.getElementById(page).scrollIntoView();
+  }
+
   constructor(public filler: FillerService) {}
 
   ngOnInit(): void {}

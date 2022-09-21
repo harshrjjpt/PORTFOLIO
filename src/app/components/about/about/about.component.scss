@@ -4,6 +4,8 @@
   color: white;
 }
 section {
+  border-left: 10px solid #b44ab0;
+  border-right: 10px solid #b44ab0;
   h5 {
     padding-top: 100px;
   }
@@ -22,8 +24,6 @@ section {
       background-color: gray;
       width: 610px;
       height: 620px;
-      -webkit-filter: $pinkWebkit;
-      filter: $pinkFilter;
       img {
         width: 610px;
         height: 620px;
@@ -35,8 +35,6 @@ section {
       }
     }
     .about {
-      -webkit-filter: drop-shadow(3px 0px 100px rgba(255, 50, 245, 0.2));
-      filter: drop-shadow(3px 0px 100px rgba(249, 76, 255, 0.2));
       width: 50%;
       font-size: 15px;
       h2 {
@@ -109,6 +107,7 @@ section {
       }
     }
   }
+  transition: 0.5s all ease-in-out;
 }
 @media screen and (max-width: 830px) {
   .about-section {

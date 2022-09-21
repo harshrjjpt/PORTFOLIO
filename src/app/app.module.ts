@@ -14,6 +14,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { SmallContactComponent } from './components/small-contact/small-contact.component';
 import { Experience2Component } from './components/experience2/experience2.component';
+import { ModalComponent } from './components/modal/modal.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { Experience2Component } from './components/experience2/experience2.compo
     ProjectsComponent,
     SmallContactComponent,
     Experience2Component,
+    ModalComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, ReactiveFormsModule],
   providers: [],
