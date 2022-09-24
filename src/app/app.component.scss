@@ -1,12 +1,11 @@
 @import "./../utility/utility.scss";
 
 svg {
-    // z-index: 100;
     width: 100px;
     position: fixed;
     animation: rotation 4.5s infinite linear;
     pointer-events: none;
-    transition: top 0.7s, left 0.7s;
+    transition: width 1s, top 1s, left 1s;
     transition-timing-function: ease-out;
     
 }
@@ -41,14 +40,8 @@ button {
 
 .increase_cricle{
   width: 150px;
-  transition-property: width;
-            transition-timing-function: ease-in-out;
-            transition-duration: 0.7s;
 }
 .decrease_circle{
   width: 100px;
-  transition-property: width;
-  transition-timing-function: ease-in-out;
-  transition-duration: 0.7s;
 }
 
