@@ -1,12 +1,12 @@
 <div class="main" [ngClass]="{ dark: filler.gettheme() === 'dark' }">
-    <h1>PRESENT</h1>
+    <h1 (mouseenter)="filler.circleWidthHandler()" (mouseleave)="filler.circleWidthHandler()">PRESENT</h1>
     <span class="underline"></span>
     <div class="sub">
         <div data-aos="fade-up"
         data-aos-duration="2000" class="left">
-            <img src="https://pbs.twimg.com/profile_images/1399047135430025222/Vh6v_jo9_400x400.jpg" alt="">
+            <img (mouseenter)="filler.circleWidthHandler()" (mouseleave)="filler.circleWidthHandler()" src="https://pbs.twimg.com/profile_images/1399047135430025222/Vh6v_jo9_400x400.jpg" alt="">
         </div>
-        <div data-aos="fade-up"
+        <div (mouseenter)="filler.circleWidthHandler()" (mouseleave)="filler.circleWidthHandler()" data-aos="fade-up"
         data-aos-duration="2000" class="right">
             <h2>I'm currently employed at DappLooker as a frontend developer.
                 </h2>
@@ -14,7 +14,7 @@
         </div>
     </div>
     <div class="products">
-        <div data-aos="fade-up"
+        <div (mouseenter)="filler.circleWidthHandler()" (mouseleave)="filler.circleWidthHandler()" data-aos="fade-up"
         data-aos-duration="2000" class="card">
             <div class="sub-card">
             <img src="https://pbs.twimg.com/profile_images/1399047135430025222/Vh6v_jo9_400x400.jpg"  alt="">
@@ -37,7 +37,7 @@
             </div>
         </div>
         </div>
-        <div data-aos="fade-up"
+        <div (mouseenter)="filler.circleWidthHandler()" (mouseleave)="filler.circleWidthHandler()" data-aos="fade-up"
         data-aos-duration="2000" class="card">
             <div class="sub-card">
             <img src="https://dapplooker.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F2e433de7-9123-4072-af75-1ac6a1b2f563%2Fcoslo.png?table=block&id=07bc3adf-176b-488c-a230-59ddbd41387f&spaceId=897ff260-5cc1-461b-bc84-3ed3a6ba3d06&width=250&userId=&cache=v2" alt="">

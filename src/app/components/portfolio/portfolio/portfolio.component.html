@@ -1,10 +1,10 @@
 <div class="main" [ngClass]="{'dark': filler.gettheme() === 'dark'}">
-    <h1>Projects</h1>
+    <h1 (mouseenter)="filler.circleWidthHandler()" (mouseleave)="filler.circleWidthHandler()">Projects</h1>
     <h2></h2>
     <div data-aos="fade-up"
     data-aos-duration="2000" class="projects-container">
-        <ul>
-            <li data-aos="fade-up"
+        <ul (mouseenter)="filler.circleWidthHandler()" (mouseleave)="filler.circleWidthHandler()">
+            <li  data-aos="fade-up"
             data-aos-duration="4000" class="card">
                 <div class="project-card">
                     <img class="project-img" src="https://images01.nicepage.com/page/50/53/website-design-preview-50537.jpg" alt="">
@@ -17,7 +17,7 @@
             <li>
                 <div class="project-card">
                     <img class="project-img" src="https://cdn.dribbble.com/users/2363127/screenshots/6666815/123.png?compress=1&resize=400x300&vertical=top" alt="">
-                    <span>m=Movie app</span>
+                    <span>Movie app</span>
                     <a target="_blank" href="https://github.com/harshrjjpt/my-movie-app">
                     <button><img src="./assets/github.png" alt="" />Github</button>
                 </a>

@@ -29,6 +29,7 @@ body{
     font-family: 'Poppins', sans-serif;
     line-height: 1.7;
     color: black;
+    cursor: url(./oie_23212720JFVRlwtY.png), auto;
 }
 
 section{
@@ -140,3 +141,41 @@ section>h2, section>h1, section>h5 {
     background-color: white;
     border-radius: 20px;
 }
+
+svg {
+    z-index: 100;
+    width: 100px;
+    position: absolute;
+    animation: rotation 4.5s infinite linear;
+    pointer-events: none;
+    transition: top 1s, left 1s;
+    transition-timing-function: ease-out;
+}
+
+text {
+    font-size: 4em;
+    font-family: 'Poppins';
+    font-weight: bold;
+    fill: rgb(138, 175, 255)
+}
+
+button {
+    background: rgb(0, 69, 219);
+    border: none;
+    outline: none;
+    padding: 2em;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    letter-spacing: .3em;
+    font-size: .9rem;
+    cursor: pointer;
+}
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }

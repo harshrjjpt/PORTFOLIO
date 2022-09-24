@@ -1,13 +1,13 @@
 <section [ngClass]="{'dark': filler.gettheme() === 'dark'}">
   <h5>Get To Know</h5>
-  <h1 style="color: #b44ab0;">About Me</h1>
+  <h1 (mouseenter)="filler.circleWidthHandler()" (mouseleave)="filler.circleWidthHandler()" style="color: #b44ab0;">About Me</h1>
   <div class="about-section">
     <div data-aos="flip-up" class="mypic">
       <img src="./assets/mypic2.png" alt="mypic" />
     </div>
     <div data-aos="fade-up"
     data-aos-duration="2000" class="about">
-      <h2>
+      <h2 (mouseenter)="filler.circleWidthHandler()" (mouseleave)="filler.circleWidthHandler()">
         "<em>
         Greetings, I'm Harsh. I work at Dapplooker as a front-end developer. I'm
         a driven individual who is eager to learn new technologies in order to
@@ -67,8 +67,8 @@
     <span class="skill-tap" *ngIf="!showSkillBar"
       >&#128072; tap or hover on any skill</span
     >
-    <div class="skills-container">
-      <app-capsule
+    <div class="skills-container" (mouseenter)="filler.circleWidthHandler()" (mouseleave)="filler.circleWidthHandler()">
+      <app-capsule 
         (mouseenter)="showSkillBar = true"
         (mouseleave)="showSkillBar = false"
         (parentComponent)="parentComponent($event)"

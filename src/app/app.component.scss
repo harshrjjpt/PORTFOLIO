@@ -1,0 +1,54 @@
+@import "./../utility/utility.scss";
+
+svg {
+    // z-index: 100;
+    width: 100px;
+    position: fixed;
+    animation: rotation 4.5s infinite linear;
+    pointer-events: none;
+    transition: top 0.7s, left 0.7s;
+    transition-timing-function: ease-out;
+    
+}
+
+text {
+    font-size: 4em;
+    font-family: 'Poppins';
+    font-weight: bold;
+    fill: #b44ab0;
+}
+
+button {
+    background: rgb(0, 69, 219);
+    border: none;
+    outline: none;
+    padding: 2em;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    letter-spacing: .3em;
+    font-size: .9rem;
+    cursor: pointer;
+}
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+.increase_cricle{
+  width: 150px;
+  transition-property: width;
+            transition-timing-function: ease-in-out;
+            transition-duration: 0.7s;
+}
+.decrease_circle{
+  width: 100px;
+  transition-property: width;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.7s;
+}
+

@@ -1,11 +1,9 @@
-@import './../../../../utility/utility.scss';
-.dark{
+@import "./../../../../utility/utility.scss";
+.dark {
   background-color: black;
   color: white;
 }
 .main {
-  border-left: 10px solid #b44ab0;
-  border-right: 10px solid #b44ab0;
   padding-bottom: 100px;
   @media screen and (max-width: 600px) {
     // margin-top: 8rem;
@@ -43,8 +41,8 @@
         box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
           rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
           rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-          -webkit-filter: $pinkWebkit;
-      filter: $pinkFilter;
+        -webkit-filter: $pinkWebkit;
+        filter: $pinkFilter;
         h5 {
           position: absolute;
           color: white;
@@ -86,8 +84,8 @@
         box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
           rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
           rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-          -webkit-filter: $pinkWebkit;
-      filter: $pinkFilter;
+        -webkit-filter: $pinkWebkit;
+        filter: $pinkFilter;
         .input-wrapper {
           position: relative;
         }
@@ -119,6 +117,7 @@
         }
 
         button {
+          letter-spacing: 1px;
           font-size: large;
           font-weight: 700;
           background-color: #b44ab0;
@@ -128,6 +127,10 @@
           border-radius: 15px;
           cursor: pointer;
           transition: 0.3s all ease-in-out;
+          padding: 0px;
+          @media screen and (max-width: 600px) {
+            font-size: 12px;
+          }
         }
         button:hover {
           background-color: white;

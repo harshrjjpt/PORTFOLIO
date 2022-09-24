@@ -1,8 +1,28 @@
-<app-header id="home"></app-header>
-<app-about id="about"></app-about>
-<app-experience id="experience"></app-experience>
-<app-experience2></app-experience2>
-<app-portfolio id="projects"></app-portfolio>
-<app-small-contact></app-small-contact>
-<app-contact id="contact"></app-contact>
+<svg [ngClass]="filler.circleWidth? 'increase_cricle' : 'decrease_circle'" style="top: {{filler.circleTop}}; left: {{filler.circleLeft}};"  xmlns="http://www.w3.org/2000/svg" xml:lang="en"
+xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 500">
+    <title>Circular Text Path</title>
+
+    <defs>
+        <path id="textcircle"
+            d="M250,400
+                a150,150 0 0,1 0,-300a150,150 0 0,1 0,300Z"
+            transform="rotate(12,250,250)"/>
+    </defs>
+    <rect width="100%" height="100%" fill="none" />
+    <text>
+        <textPath xlink:href="#textcircle"
+                aria-label="All for One &amp; One for All"
+                textLength="942">{{filler.mouseMessage}}</textPath>
+    </text>
+
+</svg>
+
+<app-header (mouseenter)="mouseMessageHandler('MY  PORTFOLIO MY  PORTFOLIO')" id="home"></app-header>
+<app-about (mouseenter)="mouseMessageHandler('ABOUT ME   ABOUT ME   ')" id="about"></app-about>
+<app-experience (mouseenter)="mouseMessageHandler('MY EXPERIENCE MY EXPERIENCE')" id="experience"></app-experience>
+<app-experience2 (mouseenter)="mouseMessageHandler('MY EXPERIENCE MY EXPERIENCE')"></app-experience2>
+<app-portfolio (mouseenter)="mouseMessageHandler('MY PROJECTS MY PROJECTS')" id="projects"></app-portfolio>
+<app-small-contact (mouseenter)="mouseMessageHandler('LETS CONNECT LETS CONNECT')"></app-small-contact>
+<app-contact (mouseenter)="mouseMessageHandler('LETS CONNECT LETS CONNECT')" id="contact"></app-contact>
 <app-footer></app-footer>
+

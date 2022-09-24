@@ -14,7 +14,7 @@
       ></a>
     </ul>
   </div>
-  <button (click)="themeHandler()" class="theme-btn">change theme</button>
+  <button (mouseenter)="filler.circleWidthHandler()" (mouseleave)="filler.circleWidthHandler()" (click)="themeHandler()" class="theme-btn">change theme</button>
   <div class="nav">
     <ul>
       <li (click)="scrollTo('about')">ABOUT</li>
@@ -28,7 +28,7 @@
   </div>
   <h5>Hello, I'm</h5>
   <h1 data-aos="fade-up"
-  data-aos-duration="2000">Harsh</h1>
+  data-aos-duration="2000" (mouseenter)="filler.circleWidthHandler()" (mouseleave)="filler.circleWidthHandler()">Harsh</h1>
 
   <h2>A Frontend Developer</h2>
 
@@ -43,7 +43,7 @@
     <button role="button">Let's Talk</button>
   </div>
 
-  <div data-aos="fade-up"
+  <div (mouseenter)="filler.circleWidthHandler()" (mouseleave)="filler.circleWidthHandler()" data-aos="fade-up"
   data-aos-duration="2000" class="my-img">
     <img src="./assets/mypic.png" alt="" />
   </div>

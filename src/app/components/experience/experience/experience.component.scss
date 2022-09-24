@@ -1,7 +1,5 @@
 @import "./../../../../utility/utility.scss";
 .main {
-  border-left: 10px solid #b44ab0;
-  border-right: 10px solid #b44ab0;
   padding-top: 400px;
   display: flex;
   flex-direction: column;
@@ -79,10 +77,10 @@
       @media screen and (max-width: 500px) {
         width: 340px;
         .github {
-            width: 360px;
+            width: 350px;
             height: 100px;
             img {
-              width: 340px;
+              width: 320px;
               height: 60px;
             }
           }

@@ -7,9 +7,17 @@ export class FillerService {
   fillerWidth: number = 0;
   themeclass: string = 'light';
   showModal: boolean = false;
+  circleLeft = 0;
+  circleTop = 0;
+  mouseMessage = '';
+  circleWidth = false;
 
   gettheme() {
     return localStorage.getItem('mytheme');
+  }
+
+  circleWidthHandler() {
+    this.circleWidth = !this.circleWidth;
   }
 
   themechange(color: string) {
