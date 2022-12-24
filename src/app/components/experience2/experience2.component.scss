@@ -1,7 +1,6 @@
 @import "./../../../utility/utility.scss";
 .main {
   color: black;
-  padding-top: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,36 +16,38 @@
     align-items: center;
     column-gap: 50px;
     @media screen and (max-width: 1200px) {
-        column-gap: 100px;
+      column-gap: 100px;
     }
     @media screen and (max-width: 700px) {
-        flex-direction: column;
-        align-items: center;
+      flex-direction: column;
+      align-items: center;
     }
     .right {
-        display: flex;
-        flex-direction: column;
+      display: flex;
+      flex-direction: column;
       width: 60%;
       color: white;
-      h2,p{
+      h2,
+      p {
         color: black;
       }
-      @media screen and (max-width: 700px){
+      @media screen and (max-width: 700px) {
         flex-direction: column;
         align-items: center;
         text-align: center;
-        h2,p{
-            width: 480px;
+        h2,
+        p {
+          width: 480px;
         }
       }
       @media screen and (max-width: 500px) {
-        h2, p{
-            width: 340px;
+        h2,
+        p {
+          width: 340px;
         }
       }
       p {
         opacity: 70%;
-        
       }
     }
     .left {
@@ -63,7 +64,7 @@
       }
     }
   }
-  .products{
+  .products {
     -webkit-filter: $pinkWebkit;
     filter: $pinkFilter;
     padding-top: 100px;
@@ -72,25 +73,25 @@
     width: 60%;
     color: white;
     @media screen and (max-width: 700px) {
-        flex-direction: column;
-        align-items: center;
-        row-gap: 30px;
+      flex-direction: column;
+      align-items: center;
+      row-gap: 30px;
     }
-    .card{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 300px;
-        height: 400px;
-        border-radius: 20px;
-        background-color: #4158d0;
-    background-image: linear-gradient(
-      43deg,
-      #4158d0 0%,
-      #c850c0 46%,
-      #ffcc70 100%
-    );
-    .sub-card{
+    .card {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 300px;
+      height: 400px;
+      border-radius: 20px;
+      background-color: #4158d0;
+      background-image: linear-gradient(
+        43deg,
+        #4158d0 0%,
+        #c850c0 46%,
+        #ffcc70 100%
+      );
+      .sub-card {
         position: relative;
         display: flex;
         flex-direction: column;
@@ -100,32 +101,32 @@
         width: 280px;
         height: 385px;
         background-color: black;
-        h4{
-            color: #64edff;
+        h4 {
+          color: #64edff;
         }
-        h3{
-            position: absolute;
-            top: 58px;
-            text-decoration: underline;
+        h3 {
+          position: absolute;
+          top: 58px;
+          text-decoration: underline;
         }
-        img{
-            position: absolute;
-            top: 8px;
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
+        img {
+          position: absolute;
+          top: 8px;
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
         }
-        p{
-            text-align: center;
-            font-size: 12px;
-            opacity: 70%;
+        p {
+          text-align: center;
+          font-size: 12px;
+          opacity: 70%;
         }
-        .tech-stack{
+        .tech-stack {
           padding: 10px;
           width: 280px;
           position: absolute;
           bottom: 55px;
-          ul{
+          ul {
             position: absolute;
             bottom: 1px;
             width: 220px;
@@ -134,29 +135,29 @@
             align-items: center;
             flex-wrap: wrap;
             justify-content: space-between;
-            li{
-              img{
+            li {
+              img {
                 width: 30px;
                 height: 30px;
               }
             }
           }
         }
-    }
+      }
     }
   }
   @media screen and (max-width: 500px) {
-    padding-top: 50px;
   }
 }
 
 .dark {
   color: white;
   background-color: black;
-  .sub{
-    .right{
-      h2,p{
-        color: white                                                                                                                                                                                                                                                                                                                                    ;
+  .sub {
+    .right {
+      h2,
+      p {
+        color: white;
       }
     }
   }

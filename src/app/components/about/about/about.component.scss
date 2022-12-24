@@ -1,9 +1,10 @@
-@import '../../../../utility/utility.scss';
+@import "../../../../utility/utility.scss";
 .dark {
-  background-color: black;
+  background-color: #0e0016;
   color: white;
 }
 section {
+  background-color: #aa22bf;
   h5 {
     padding-top: 100px;
   }
@@ -153,7 +154,6 @@ section {
 }
 @media screen and (max-width: 500px) {
   section {
-    padding-top: 30px;
     h1 {
       margin-bottom: 50px !important;
     }

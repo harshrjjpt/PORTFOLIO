@@ -1,6 +1,6 @@
 @import "./../../../../utility/utility.scss";
 .main {
-  padding-top: 400px;
+  background-color: #ff99c8;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -21,8 +21,8 @@
       align-items: center;
     }
     .left {
-        -webkit-filter: $pinkWebkit;
-    filter: $pinkFilter;
+      -webkit-filter: $pinkWebkit;
+      filter: $pinkFilter;
       width: 30%;
 
       img {
@@ -39,7 +39,7 @@
 
       .github {
         -webkit-filter: $pinkWebkit;
-    filter: $pinkFilter;
+        filter: $pinkFilter;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -77,35 +77,31 @@
       @media screen and (max-width: 500px) {
         width: 340px;
         .github {
-            width: 350px;
-            height: 100px;
-            img {
-              width: 320px;
-              height: 60px;
-            }
+          width: 350px;
+          height: 100px;
+          img {
+            width: 320px;
+            height: 60px;
           }
+        }
       }
     }
-  }
-  @media screen and (max-width: 500px) {
-    padding-top: 100px;
   }
 }
 
 .dark {
   color: white;
-  background-color: black;
+  background-color: #aa22bf;
   h1 {
     color: white;
   }
-  .first{
-    .right{
-      .github{
-        h2{
+  .first {
+    .right {
+      .github {
+        h2 {
           color: white;
         }
       }
     }
   }
-  
 }
