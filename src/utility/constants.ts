@@ -4,14 +4,12 @@ export default class Constants {
       {
         skillName: 'Java',
         skillValue: 70,
-        Image:
-          'https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg',
+        Image: 'https://img.shields.io/badge/java-%23ED8B00.svg',
       },
       {
         skillName: 'React Js',
         skillValue: 80,
-        Image:
-          'https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg',
+        Image: 'https://img.shields.io/badge/react-%2320232a.svg',
       },
       {
         skillName: 'Django',
@@ -26,8 +24,7 @@ export default class Constants {
       {
         skillName: 'HTML',
         skillValue: 90,
-        Image:
-          'https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg',
+        Image: 'https://img.shields.io/badge/html5-%23E34F26.svg',
       },
       {
         skillName: 'CSS',

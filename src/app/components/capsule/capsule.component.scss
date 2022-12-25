@@ -59,17 +59,20 @@
     }
 
     .text {
-      font-size: 10px;
+      font-size: 20px;
       padding-left: 3px;
       padding-right: 3px;
-      @media screen and (max-width: 880px) {
-        font-size: 8px;
-      }
-      @media screen and (max-width: 600px) {
-        font-size: 6px;
-      }
-      @media screen and (max-width: 425px) {
-        font-size: 5px;
+      h1 {
+        font-size: 20px;
+        @media screen and (max-width: 880px) {
+          font-size: 8px;
+        }
+        @media screen and (max-width: 600px) {
+          font-size: 6px;
+        }
+        @media screen and (max-width: 425px) {
+          font-size: 5px;
+        }
       }
     }
   }
@@ -78,6 +81,9 @@
     width: 130px;
     height: 130px;
     background-color: black;
+    background: url(https://static.wixstatic.com/media/03318b_9184f58846cf40e99f0848b3d896b5c3~mv2.gif);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     color: white;
     top: -8px;
     @media screen and (max-width: 880px) {

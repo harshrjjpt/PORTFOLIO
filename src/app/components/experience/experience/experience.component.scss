@@ -12,24 +12,13 @@
     padding-top: 100px;
     width: 80%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     @media screen and (max-width: 700px) {
       flex-direction: column;
       row-gap: 50px;
       justify-content: center;
       align-items: center;
-    }
-    .left {
-      -webkit-filter: $pinkWebkit;
-      filter: $pinkFilter;
-      width: 30%;
-
-      img {
-        border-radius: 50%;
-        width: 80%;
-        height: 80%;
-      }
     }
     .right {
       width: 70%;

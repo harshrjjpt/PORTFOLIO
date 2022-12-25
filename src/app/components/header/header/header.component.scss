@@ -8,109 +8,129 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  .theme-btn {
-    letter-spacing: 0.5px;
-    font-weight: 600px;
-    font-size: 12px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    background-color: #b44ab0;
-    width: 100px;
-    height: 30px;
-    border-radius: 10px;
-    color: white;
-    top: 12px;
-    right: 230px;
-    cursor: pointer;
-    transition: 0.2s all ease-in-out;
-    @media screen and (max-width: 820px) {
-      top: 73px;
-      right: 6px;
-    }
-    @media screen and (max-width: 700px) {
-      top: 48px;
-      right: 39px;
-    }
-    @media screen and (max-width: 700px) {
-      right: 29px;
-    }
-  }
-  .theme-btn:active {
-    background-color: white;
-    color: #b44ab0;
-    transform: scale(1.05);
-  }
-  .social-links {
-    width: 50px;
-    position: absolute;
-    top: 10px;
-    right: 155px;
-    ul {
-      width: 200px;
+  .main-nav-bar {
+    z-index: 11;
+    position: relative;
+    width: 100%;
+    height: 100px;
+    .theme-btn {
+      letter-spacing: 0.5px;
+      font-weight: 600px;
+      font-size: 12px;
       display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      li {
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      background-color: #b44ab0;
+      width: 100px;
+      height: 30px;
+      border-radius: 10px;
+      color: white;
+      right: 186px;
+      top: 12px;
+      cursor: pointer;
+      transition: 0.2s all ease-in-out;
+      @media screen and (max-width: 820px) {
+        top: 73px;
+        right: 6px;
+      }
+      @media screen and (max-width: 700px) {
+        top: 74px;
+        right: 8px;
+      }
+      @media screen and (max-width: 700px) {
+        right: 6px;
+      }
+    }
+    .theme-btn:hover {
+      background: url(https://kusama.network/assets/img/parachains/KUSAMA-GIFS_3.gif);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
+    .theme-btn:active {
+      background-color: white;
+      color: #b44ab0;
+      transform: scale(1.05);
+    }
+    .social-links {
+      width: 50px;
+      position: absolute;
+      top: 10px;
+      right: 155px;
+      ul {
+        width: 200px;
         display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: white;
+        flex-direction: row;
+        justify-content: space-between;
+        li {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: white;
+
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          transition: 0.3s all ease-in-out;
+          img {
+            width: 15px;
+            height: 15px;
+          }
+        }
+        li:hover {
+          cursor: pointer;
+          transform: scale(1.2);
+          background: url(https://kusama.network/assets/img/parachains/KUSAMA-GIFS_3.gif);
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+        }
+        .twitter {
+          img {
+            width: 17px;
+            height: 17px;
+          }
+        }
+      }
+    }
+    .nav {
+      position: absolute;
+      top: 23px;
+      left: 0px;
+      ul {
+        display: flex;
+        li {
+          font-size: 17px;
+          margin-right: 20px;
+          font-weight: 500;
+          transition: 0.3s all ease-in-out;
+        }
+        li:hover {
+          cursor: pointer;
+          letter-spacing: 3px;
+        }
+      }
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
+    }
+    .hamburger-icon {
+      display: none;
+      position: absolute;
+      top: 9px;
+      img {
         width: 50px;
         height: 50px;
-        border-radius: 50%;
-        transition: 0.3s all ease-in-out;
-        img {
-          width: 15px;
-          height: 15px;
-        }
+        transition: 0.2s all ease-in-out;
       }
-      li:hover {
-        cursor: pointer;
+      img:active {
         transform: scale(1.2);
       }
-      .twitter {
-        img {
-          width: 17px;
-          height: 17px;
-        }
-      }
-    }
-  }
-  .nav {
-    position: absolute;
-    top: 20px;
-    left: 100px;
-    ul {
-      display: flex;
-      li {
-        font-size: 17px;
-        margin-right: 20px;
-        font-weight: 500;
-        transition: 0.3s all ease-in-out;
-      }
-      li:hover {
-        cursor: pointer;
-        letter-spacing: 3px;
+      @media screen and (max-width: 768px) {
+        display: block;
       }
     }
   }
 
-  .hamburger-icon {
-    display: none;
-    position: absolute;
-    top: -105px;
-    left: 100px;
-    img {
-      width: 32px;
-      height: 32px;
-      transition: 0.2s all ease-in-out;
-    }
-    img:active {
-      transform: scale(1.2);
-    }
-  }
   h5 {
     margin-top: 100px;
     font-size: 1rem;
@@ -136,7 +156,7 @@ section {
     margin-bottom: 20px;
     button {
       letter-spacing: 0.5px;
-      width: 120px;
+      width: 150px;
       height: 50px;
       color: white;
       background-color: #b44ab0;
@@ -171,6 +191,9 @@ section {
     width: 28rem;
     height: 28rem;
     background-color: white;
+    background: url(https://kusama.network/assets/img/parachains/KUSAMA-GIFS_3.gif);
+    background-repeat: no-repeat;
+    background-size: 130% 130%;
     border-radius: 50%;
     margin-top: 2rem;
     display: flex;
@@ -182,8 +205,8 @@ section {
     margin-bottom: 20px;
     img {
       border-radius: 50%;
-      width: 25rem;
-      height: 25rem;
+      width: 20rem;
+      height: 20rem;
       transition: 0.3s all ease-in-out;
       filter: grayscale(100%);
     }
@@ -207,7 +230,6 @@ section {
       display: none;
     }
     .social-links {
-      right: 90px;
       ul {
         width: 100px;
         li {
@@ -217,7 +239,6 @@ section {
       }
     }
     .hamburger-icon {
-      left: 70px;
       display: block;
     }
     .buttons {
@@ -239,11 +260,6 @@ section {
 
 @media screen and (max-width: 500px) {
   section {
-    // margin-top: 70px;
-    .social-links {
-      right: 80px;
-      top: 10px;
-    }
     .hamburger-icon {
       left: 40px;
       top: 10px;
@@ -282,3 +298,20 @@ section {
 //     transition: 10s all ease-in-out;
 //   }
 // }
+.my-img-background-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .my-img-background {
+    @media screen and (max-width: 850px) {
+      width: 100%;
+    }
+  }
+}
+svg {
+  top: 0px;
+  position: absolute;
+}

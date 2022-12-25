@@ -1,4 +1,6 @@
 .main {
+  margin: 0px;
+  padding: 0px;
   padding-top: 80px;
   display: flex;
   justify-content: center;
@@ -16,6 +18,7 @@
     .social-links {
       padding-top: 50px;
       ul {
+        padding: 0px;
         width: 300px;
         display: flex;
         justify-content: space-between;

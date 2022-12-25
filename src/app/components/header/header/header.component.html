@@ -26,40 +26,51 @@
       fill-opacity="1"
     ></path>
   </svg>
-  <div class="social-links">
-    <ul>
-      <a target="_blank" href="https://twitter.com/harshrjjpt">
-        <li class="twitter"><img src="./assets/twitter (2).png" alt="" /></li
-      ></a>
-      <a target="_blank" href="https://github.com/harshrjjpt"
-        ><li class="github"><img src="./assets/github.png" alt="" /></li
-      ></a>
-      <a
-        target="_blank"
-        href="https://www.linkedin.com/in/harsh-rajput-0315381a8/"
-        ><li class="linkedin"><img src="./assets/linkedin.png" alt="" /></li
-      ></a>
-    </ul>
+  <div class="main-nav-bar container">
+    <div class="social-links">
+      <ul>
+        <a target="_blank" href="https://twitter.com/harshrjjpt">
+          <li class="twitter"><img src="./assets/twitter (2).png" alt="" /></li
+        ></a>
+        <a target="_blank" href="https://github.com/harshrjjpt"
+          ><li class="github"><img src="./assets/github.png" alt="" /></li
+        ></a>
+        <a
+          target="_blank"
+          href="https://www.linkedin.com/in/harsh-rajput-0315381a8/"
+          ><li class="linkedin"><img src="./assets/linkedin.png" alt="" /></li
+        ></a>
+      </ul>
+    </div>
+    <button
+      (mouseenter)="filler.circleWidthHandler()"
+      (mouseleave)="filler.circleWidthHandler()"
+      (click)="themeHandler()"
+      class="theme-btn"
+    >
+      change theme
+    </button>
+    <div class="nav">
+      <ul>
+        <li (click)="scrollTo('about')">ABOUT</li>
+        <li (click)="scrollTo('contact')">CONTACT</li>
+        <li (click)="scrollTo('experience')">EXPERIENCE</li>
+        <li (click)="scrollTo('projects')">PROJECTS</li>
+      </ul>
+    </div>
+    <div (click)="modalHandler()" class="hamburger-icon">
+      <img src="./assets/hamburger.png" alt="" />
+    </div>
   </div>
-  <button
-    (mouseenter)="filler.circleWidthHandler()"
-    (mouseleave)="filler.circleWidthHandler()"
-    (click)="themeHandler()"
-    class="theme-btn"
-  >
-    change theme
-  </button>
-  <div class="nav">
-    <ul>
-      <li (click)="scrollTo('about')">ABOUT</li>
-      <li (click)="scrollTo('contact')">CONTACT</li>
-      <li (click)="scrollTo('experience')">EXPERIENCE</li>
-      <li (click)="scrollTo('projects')">PROJECTS</li>
-    </ul>
+  <div class="my-img-background-container">
+    <img
+      *ngIf="filler.gettheme() === 'dark'"
+      class="my-img-background"
+      src="https://unmarshal.io/assets/img/bg-8.png"
+      alt=""
+    />
   </div>
-  <div (click)="modalHandler()" class="hamburger-icon">
-    <img src="./assets/hamburger.png" alt="" />
-  </div>
+
   <h5>Hello, I'm</h5>
   <h1
     data-aos="fade-up"

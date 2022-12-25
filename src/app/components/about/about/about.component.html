@@ -27,37 +27,56 @@
       fill-opacity="1"
     ></path>
   </svg>
-  <h5>Get To Know</h5>
-  <h1
-    (mouseenter)="filler.circleWidthHandler()"
-    (mouseleave)="filler.circleWidthHandler()"
-    style="color: #b44ab0"
-  >
-    About Me
-  </h1>
-  <div class="about-section">
-    <div data-aos="flip-up" class="mypic">
-      <img src="./assets/mypic2.png" alt="mypic" />
-    </div>
-    <div data-aos="fade-up" data-aos-duration="2000" class="about">
-      <h2
-        (mouseenter)="filler.circleWidthHandler()"
-        (mouseleave)="filler.circleWidthHandler()"
-      >
-        "<em>
-          Greetings, I'm Harsh. I work at Dapplooker as a front-end developer.
+
+  <!-- ****START COMPONENT***** -->
+  <div class="about-container container">
+    <h5 class="get-to-know">Get To Know</h5>
+    <h1
+      class="about-me"
+      (mouseenter)="filler.circleWidthHandler()"
+      (mouseleave)="filler.circleWidthHandler()"
+      style="color: #b44ab0"
+    >
+      About Me
+    </h1>
+    <div class="about-section container">
+      <div class="my-img-background-container">
+        <img
+          class="my-img-background"
+          src="https://unmarshal.io/assets/img/bg-1.png"
+          alt=""
+        />
+      </div>
+      <div data-aos="flip-up" class="mypic">
+        <img src="./assets/mypic2.png" alt="mypic" />
+      </div>
+      <div data-aos="fade-up" data-aos-duration="2000" class="about">
+        <h2
+          (mouseenter)="filler.circleWidthHandler()"
+          (mouseleave)="filler.circleWidthHandler()"
+          class="my-about"
+        >
+          " Greetings, I'm Harsh. I work at Dapplooker as a front-end developer.
           I'm a driven individual who is eager to learn new technologies in
           order to advance daily. In order to learn more about various
           technologies and make a major contribution to the industry, I'm
           seeking for challenging possibilities in the IT sector. React Js,
           Redux, Angular, Bootstrap, and other programming languages and
-          frameworks are a few things I have experience with. </em
-        >"
-      </h2>
+          frameworks are a few things I have experience with."
+        </h2>
+      </div>
     </div>
   </div>
 
   <h1 class="skills">SKILLS</h1>
+  <div class="my-img-background-container">
+    <img
+      *ngIf="filler.gettheme() === 'dark'"
+      class="my-img-background"
+      src="https://unmarshal.io/assets/img/bg-1.png"
+      alt=""
+    />
+  </div>
 
   <div data-aos="fade-up" data-aos-duration="2000" class="main-skills">
     <a

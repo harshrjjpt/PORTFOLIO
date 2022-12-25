@@ -5,6 +5,64 @@
 }
 section {
   background-color: #aa22bf;
+  .about-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    .about-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      @media screen and (max-width: 1000px) {
+        flex-direction: column;
+        justify-content: center;
+      }
+      .mypic {
+        width: 50%;
+        @media screen and (max-width: 1400px) {
+          width: 100%;
+        }
+        @media screen and (max-width: 1000px) {
+          display: flex;
+          justify-content: center;
+        }
+        img {
+          width: 610px;
+          height: 623px;
+          @media screen and (max-width: 1400px) {
+            width: 482px;
+            height: 506px;
+          }
+          @media screen and (max-width: 1000px) {
+            width: 426px;
+            height: 455px;
+          }
+        }
+      }
+      .about {
+        width: 50%;
+        @media screen and (max-width: 1400px) {
+          width: 80%;
+        }
+        .my-about {
+          font-size: 20px;
+          font-style: italic;
+          line-height: 39px;
+          font-weight: 100;
+          letter-spacing: 0.03em;
+          @media screen and (max-width: 1400px) {
+            font-size: 15px;
+          }
+          @media screen and (max-width: 1000px) {
+            padding-top: 20px;
+            font-size: 16px;
+            line-height: 30px;
+          }
+        }
+      }
+    }
+  }
   h5 {
     padding-top: 100px;
   }
@@ -13,49 +71,7 @@ section {
     font-size: 3rem;
     margin-bottom: 150px;
   }
-  .about-section {
-    margin: auto;
-    width: 75%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    .mypic {
-      background-color: gray;
-      width: 610px;
-      height: 620px;
-      img {
-        width: 610px;
-        height: 620px;
-        transform: rotate(-10deg);
-        transition: 0.3s all ease-in-out;
-      }
-      img:hover {
-        transform: rotate(0deg);
-      }
-    }
-    .about {
-      width: 50%;
-      font-size: 15px;
-      h2 {
-        font-weight: 300;
-        letter-spacing: 2px;
-      }
-    }
-    .about h2 span {
-      transition: 0.5s all ease-in-out;
-    }
-    .about:hover h2 .span1 {
-      color: white;
-      font-size: 40px;
-      font-weight: 500;
-    }
-    .about:hover h2 .span2 {
-      transition-delay: 0.4s;
-      color: white;
-      font-size: 35px;
-      font-weight: 500;
-    }
-  }
+
   .skills {
     margin-top: 200px;
     margin-bottom: 200px;
@@ -173,7 +189,7 @@ section {
         margin-top: 50px;
         width: 360px !important;
         h2 {
-          text-align: center;
+          // text-align: center;
           width: 350px;
           font-size: 15px;
         }
@@ -189,4 +205,18 @@ section {
 }
 .skill-meter-white {
   background-color: white !important;
+}
+
+.my-img-background-container {
+  width: 80%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .my-img-background {
+    @media screen and (max-width: 850px) {
+      width: 100%;
+    }
+  }
 }
