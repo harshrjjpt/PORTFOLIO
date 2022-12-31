@@ -13,7 +13,8 @@ export class FillerService {
   circleWidth = false;
 
   gettheme() {
-    return localStorage.getItem('mytheme');
+    // return localStorage.getItem('mytheme');
+    return 'dark';
   }
 
   circleWidthHandler() {

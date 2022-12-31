@@ -1,47 +1,49 @@
 @import "./../utility/utility.scss";
 
+.main {
+  background-color: black;
+}
+
 svg {
-    width: 100px;
-    position: fixed;
-    animation: rotation 4.5s infinite linear;
-    pointer-events: none;
-    transition: width 1s, top 1s, left 1s;
-    transition-timing-function: ease-out;
-    
+  width: 100px;
+  position: fixed;
+  animation: rotation 4.5s infinite linear;
+  pointer-events: none;
+  transition: width 1s, top 1s, left 1s;
+  transition-timing-function: ease-out;
 }
 
 text {
-    font-size: 4em;
-    font-family: 'Poppins';
-    font-weight: bold;
-    fill: #b44ab0;
+  font-size: 4em;
+  font-family: "Poppins";
+  font-weight: bold;
+  fill: #b44ab0;
 }
 
 button {
-    background: rgb(0, 69, 219);
-    border: none;
-    outline: none;
-    padding: 2em;
-    text-transform: uppercase;
-    color: rgb(255, 255, 255);
-    letter-spacing: .3em;
-    font-size: .9rem;
-    cursor: pointer;
+  background: rgb(0, 69, 219);
+  border: none;
+  outline: none;
+  padding: 2em;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  letter-spacing: 0.3em;
+  font-size: 0.9rem;
+  cursor: pointer;
 }
 
 @keyframes rotation {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(359deg);
-    }
+  from {
+    transform: rotate(0deg);
   }
+  to {
+    transform: rotate(359deg);
+  }
+}
 
-.increase_cricle{
+.increase_cricle {
   width: 150px;
 }
-.decrease_circle{
+.decrease_circle {
   width: 100px;
 }
-
