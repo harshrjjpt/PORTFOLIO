@@ -10,7 +10,9 @@ export class ModalComponent implements OnInit {
   constructor(public filler: FillerService) {}
   scrollTo(page) {
     this.filler.showModal = false;
-    document.getElementById(page).scrollIntoView();
+    document.getElementById(page).scrollIntoView({
+      behavior: 'smooth',
+    });
   }
 
   ngOnInit(): void {}

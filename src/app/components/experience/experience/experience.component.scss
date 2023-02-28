@@ -25,6 +25,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      margin-bottom: 160px;
 
       .github {
         -webkit-filter: $pinkWebkit;
@@ -35,13 +36,13 @@
         position: relative;
         padding: 40px;
         border-radius: 40px;
-        background-color: #4159d062;
-        background-image: linear-gradient(
-          43deg,
-          #4159d03a 0%,
-          #c850c044 46%,
-          #ffcd703a 100%
-        );
+        background-color: black;
+        // background-image: linear-gradient(
+        //   43deg,
+        //   #4159d03a 0%,
+        //   #c850c044 46%,
+        //   #ffcd703a 100%
+        // );
         img {
           width: 95%;
         }

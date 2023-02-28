@@ -1,4 +1,4 @@
-<div [ngClass]="{'dark': filler.gettheme() === 'dark'}" class="main">
+<div [ngClass]="{ dark: filler.gettheme() === 'dark' }" class="main">
   <div class="sub-main">
     <div class="left">
       <div class="box">
@@ -7,7 +7,7 @@
         <h4>harshrjjpt@gmail.com</h4>
         <h5>Send a message</h5>
       </div>
-      <div style="background-color: #0A66C2;" class="linkedin box">
+      <div style="background-color: #0a66c2" class="linkedin box">
         <img src="./../../../../assets/linkedin.png" alt="" />
 
         <h3>LinkedIn</h3>
@@ -18,32 +18,44 @@
         <div class="box">
           <img src="" alt="" />
           <h3>WhatsApp</h3>
-        <h4>+91 9311670605</h4>
+          <h4>+91 9311670605</h4>
           <h5>Send a message</h5>
         </div>
       </a>
-     
     </div>
     <div class="right">
-      <form data-aos="fade-up"
-      data-aos-duration="2000" [formGroup]="msgForm" (ngSubmit)="submitForm()" action="">
+      <form
+        data-aos="fade-up"
+        data-aos-duration="2000"
+        [formGroup]="msgForm"
+        (ngSubmit)="submitForm()"
+        action=""
+      >
         <div class="input-wrapper">
-        <input formControlName="from_name" type="text" placeholder="Your Full Name" />
-        <!-- <p class="error" *ngIf="
+          <input
+            formControlName="from_name"
+            type="text"
+            placeholder="Your Full Name"
+          />
+          <!-- <p class="error" *ngIf="
         (msgForm.controls['from_name'].touched &&
           msgForm.controls['from_name'].invalid) ||
         isFormInvalid -->
-      <!-- ">name is not valid, Only alphabets are allowed</p> -->
-    </div>
-    <div class="input-wrapper">
-        <input formControlName="email_id" type="email" placeholder="Your Email" />
-        <!-- <p class="error" *ngIf="
+          <!-- ">name is not valid, Only alphabets are allowed</p> -->
+        </div>
+        <div class="input-wrapper">
+          <input
+            formControlName="email_id"
+            type="email"
+            placeholder="Your Email"
+          />
+          <!-- <p class="error" *ngIf="
         (msgForm.controls['email_id'].touched &&
           msgForm.controls['email_id'].invalid) ||
         isFormInvalid
       ">Please input a valid email. (valid email: john@example.com)</p> -->
-    </div>
-        <textarea formControlName="message" class="message" type="text" >
+        </div>
+        <textarea formControlName="message" class="message" type="text">
         </textarea>
         <button>Send Message</button>
       </form>

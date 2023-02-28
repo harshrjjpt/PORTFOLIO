@@ -4,57 +4,52 @@ export default class Constants {
       {
         skillName: 'Java',
         skillValue: 70,
-        Image: 'https://img.shields.io/badge/java-%23ED8B00.svg',
+        Image: 'devicon-java-plain-wordmark colored',
       },
       {
         skillName: 'React Js',
         skillValue: 80,
-        Image: 'https://img.shields.io/badge/react-%2320232a.svg',
+        Image: 'devicon-react-original colored',
       },
       {
         skillName: 'Django',
         skillValue: 80,
-        Image: 'https://cdn.worldvectorlogo.com/logos/django.svg',
+        Image: 'devicon-django-plain colored',
       },
       {
         skillName: 'Angular',
         skillValue: 90,
-        Image: 'https://angular.io/assets/images/logos/angular/angular.svg',
+        Image: 'devicon-angularjs-plain colored',
       },
       {
         skillName: 'HTML',
         skillValue: 90,
-        Image: 'https://img.shields.io/badge/html5-%23E34F26.svg',
+        Image: 'devicon-html5-plain-wordmark colored',
       },
       {
         skillName: 'CSS',
         skillValue: 85,
-        Image:
-          'https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg',
+        Image: 'devicon-css3-plain-wordmark colored',
       },
       {
         skillName: 'Tailwind CSS',
         skillValue: 90,
-        Image:
-          'https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg',
+        Image: 'devicon-tailwindcss-plain colored',
       },
       {
         skillName: 'Javascript',
         skillValue: 70,
-        Image:
-          'https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg',
+        Image: 'devicon-javascript-plain colored',
       },
       {
         skillName: 'Typescript',
         skillValue: 70,
-        Image:
-          'https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg',
+        Image: 'devicon-typescript-plain colored',
       },
       {
         skillName: 'Bootstrap',
         skillValue: 95,
-        Image:
-          'https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg',
+        Image: 'devicon-bootstrap-plain-wordmark colored',
       },
       // {
       //   skillName: 'Git',
@@ -64,13 +59,42 @@ export default class Constants {
       {
         skillName: 'MySQL',
         skillValue: 70,
-        Image:
-          'https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg',
+        Image: 'devicon-mysql-plain-wordmark colored',
       },
       {
         skillName: 'Figma',
         skillValue: 90,
-        Image: 'https://www.vectorlogo.zone/logos/figma/figma-icon.svg',
+        Image: 'devicon-figma-plain colored',
+      },
+    ],
+    projects: [
+      {
+        title: 'Pizza website',
+        image:
+          'https://i.pinimg.com/736x/9c/31/a6/9c31a6d2baf5353558aa5534892e51e4.jpg',
+        description: '',
+        link: '',
+      },
+      {
+        title: 'Movie app',
+        image:
+          'https://cdn.dribbble.com/users/2363127/screenshots/6666815/123.png?compress=1&resize=400x300&vertical=top',
+        description: '',
+        link: '',
+      },
+      {
+        title: 'Space invador game',
+        image:
+          'https://images.crazygames.com/games/space-invaders/cover-1591955301711.png?auto=format,compress&q=75&cs=strip',
+        description: '',
+        link: '',
+      },
+      {
+        title: 'Guess the quote game',
+        image:
+          'https://www.rd.com/wp-content/uploads/2019/11/33-the-princess-bride.jpg?resize=700,466',
+        description: '',
+        link: '',
       },
     ],
   };

@@ -1,4 +1,5 @@
 <section [ngClass]="{ dark: filler.gettheme() === 'dark' }">
+  <div class="circle-blur-shadow"></div>
   <svg
     data-name="Layer 1"
     xmlns="http://www.w3.org/2000/svg"
@@ -101,8 +102,15 @@
     data-aos-duration="2000"
     class="my-img"
   >
-    <img src="./assets/mypic.png" alt="" />
+    <img src="../../../../assets/mypic4.jpeg" alt="" />
   </div>
 
-  <app-modal *ngIf="filler.showModal" class="modal"></app-modal>
+  <div class="modal-container">
+    <app-modal
+      data-aos="fade-up"
+      data-aos-duration="2000"
+      *ngIf="filler.showModal"
+      class="my-modal"
+    ></app-modal>
+  </div>
 </section>

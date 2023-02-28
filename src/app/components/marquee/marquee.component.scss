@@ -1,0 +1,322 @@
+/**
+  *
+  * main wrapper
+  */
+.top-projects-main-wrapper {
+  position: relative;
+  font-family: "Heebo";
+  width: 1225px;
+  height: 323px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  margin-top: 125px;
+  /**
+  *
+  * @TABLET screen devices
+  */
+  @media screen and (max-width: 1280px) {
+    width: 629.1px;
+    height: 155.31px;
+  }
+  /**
+  *
+  * @Mobile screen devices
+  */
+  @media screen and (max-width: 560px) {
+    width: 307px;
+    height: 80.37px;
+    border-radius: 8px;
+  }
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+  .top-projects-title {
+    position: absolute;
+    top: 30px;
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 56px;
+    letter-spacing: 0.11em;
+    color: #ffffff;
+    text-transform: capitalize;
+    @media screen and (max-width: 1280px) {
+      font-size: 18px;
+      line-height: 26px;
+      top: 21px;
+    }
+    /**
+  *
+  * @Mobile screen devices
+  */
+    @media screen and (max-width: 560px) {
+      font-size: 12px;
+      line-height: 18px;
+      top: 4px;
+    }
+  }
+  .moving-array-container {
+    position: absolute;
+    top: 150px;
+    width: 100%;
+    @media screen and (max-width: 1280px) {
+      top: 64px;
+    }
+    /**
+  *
+  * @Mobile screen devices
+  */
+    @media screen and (max-width: 560px) {
+      top: 42px;
+    }
+  }
+}
+/**
+  *
+  * bottom array 
+  */
+.bottom-array {
+  .marquee-container {
+    height: 120px;
+    overflow: hidden;
+    line-height: 30px;
+
+    .marquee {
+      top: 0;
+      left: 180%;
+      width: 180%;
+      overflow: hidden;
+      position: absolute;
+      white-space: nowrap;
+      animation: marqueeBottom 30s linear infinite;
+      @media screen and (max-width: 1280px) {
+        animation: marqueeBottomTablet 30s linear infinite;
+        left: 235%;
+        width: 235%;
+      }
+      /**
+  *
+  * @Mobile screen devices
+  */
+      @media screen and (max-width: 560px) {
+        animation: marqueeBottomMobile 30s linear infinite;
+        left: 200%;
+        width: 200%;
+      }
+    }
+
+    .marquee2 {
+      animation-delay: 15s;
+    }
+    b {
+      padding-left: 10px;
+    }
+  }
+}
+/**
+  *
+  * top array
+  */
+.top-array {
+  .marquee-container {
+    height: 120px;
+    overflow: hidden;
+    line-height: 30px;
+
+    .marquee {
+      top: 0;
+      left: 120%;
+      width: 120%;
+      overflow: hidden;
+      position: absolute;
+      white-space: nowrap;
+      animation: marqueeTop 20s linear infinite;
+      @media screen and (max-width: 1280px) {
+        animation: marqueeTopTablet 20s linear infinite;
+        left: 160%;
+        width: 160%;
+      }
+      /**
+  *
+  * @Mobile screen devices
+  */
+      @media screen and (max-width: 560px) {
+        animation: marqueeTopMobile 20s linear infinite;
+        left: 130%;
+        width: 130%;
+      }
+    }
+
+    .marquee2 {
+      animation-delay: 10s;
+    }
+    b {
+      padding-left: 10px;
+    }
+  }
+}
+
+@keyframes marqueeBottom {
+  0% {
+    left: 110%;
+  }
+  100% {
+    left: -250%;
+  }
+}
+@keyframes marqueeTop {
+  0% {
+    left: 120%;
+  }
+  100% {
+    left: -120%;
+  }
+}
+@keyframes marqueeBottomTablet {
+  0% {
+    left: 95%;
+  }
+  100% {
+    left: -383%;
+  }
+}
+@keyframes marqueeTopTablet {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: -212%;
+  }
+}
+
+@keyframes marqueeBottomMobile {
+  0% {
+    left: 125%;
+  }
+  100% {
+    left: -272%;
+  }
+}
+
+@keyframes marqueeTopMobile {
+  0% {
+    left: 130%;
+  }
+  100% {
+    left: -130%;
+  }
+}
+
+.top-array,
+.bottom-array {
+  .marquee-container {
+    @media screen and (max-width: 1280px) {
+      height: 43px;
+    }
+    /**
+  *
+  * @Mobile screen devices
+  */
+    @media screen and (max-width: 560px) {
+      height: 42px;
+    }
+    .marquee {
+      span {
+        width: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .programming-language-icon {
+          font-size: 100px;
+          @media screen and (max-width: 1280px) {
+            font-size: 40px;
+          }
+        }
+
+        /**
+  *
+  * @Mobile screen devices
+  */
+        @media screen and (max-width: 560px) {
+          width: 50px;
+          ::ng-deep #projectsComponentIcon {
+            transform: scale(0.3);
+          }
+        }
+      }
+    }
+  }
+}
+.top-array {
+  .marquee-container {
+    margin-bottom: 10px;
+    @media screen and (max-width: 1280px) {
+      margin-bottom: 20px;
+    }
+  }
+}
+.blurr-effect-gradient {
+  top: 90px;
+  z-index: 11;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  width: 101%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media screen and (max-width: 1280px) {
+    top: 40px;
+  }
+  @media screen and (max-width: 600px) {
+    height: 130%;
+  }
+
+  .left-blurr {
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(
+      85.93deg,
+      rgba(0, 0, 1, 6) 2.6%,
+      rgba(13, 23, 71, 0) 87.34%
+    );
+    border-radius: 20px 0px 0px 20px;
+    /**
+  *
+  * @Mobile screen devices
+  */
+    @media screen and (max-width: 560px) {
+      border-radius: 8px 0px 0px 8px;
+      width: 60%;
+      height: 100%;
+      background: linear-gradient(
+        85.93deg,
+        rgb(0, 0, 1) 2.6%,
+        rgba(13, 23, 71, 0) 87.34%
+      );
+      border-radius: 20px 0px 0px 20px;
+      position: relative;
+      right: 21px;
+    }
+  }
+  .right-blurr {
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(
+      85.93deg,
+      rgba(0, 0, 1, 6) 2.6%,
+      rgba(13, 23, 71, 0) 87.34%
+    );
+    border-radius: 20px 0px 0px 20px;
+    transform: rotate(-180deg);
+    /**
+  *
+  * @Mobile screen devices
+  */
+    @media screen and (max-width: 560px) {
+      border-radius: 8px 0px 0px 8px;
+    }
+  }
+}

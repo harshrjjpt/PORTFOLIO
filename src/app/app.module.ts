@@ -16,6 +16,7 @@ import { SmallContactComponent } from './components/small-contact/small-contact.
 import { Experience2Component } from './components/experience2/experience2.component';
 import { ModalComponent } from './components/modal/modal.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { MarqueeComponent } from './components/marquee/marquee.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     SmallContactComponent,
     Experience2Component,
     ModalComponent,
+    MarqueeComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, ReactiveFormsModule, NgbModule],
   providers: [],

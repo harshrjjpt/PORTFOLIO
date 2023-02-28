@@ -32,7 +32,6 @@ export class AppComponent implements OnInit {
   onMouseMove(e) {
     this.filler.circleLeft = e.screenX - 34;
     this.filler.circleTop = e.screenY - 133;
-    console.log(e.screenX);
   }
 
   // window.addEventListner('mousemove', (event)=>{

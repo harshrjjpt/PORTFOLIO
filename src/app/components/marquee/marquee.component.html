@@ -1,0 +1,43 @@
+<!-- ======= top-projects wrapper ======= -->
+<div class="top-projects-main-wrapper">
+  <!-- ======= top-projects Blurr gradients on left and right side ======= -->
+  <div class="blurr-effect-gradient">
+    <!-- ======= top-projects left Blurr ======= -->
+    <div class="left-blurr"></div>
+    <!-- ======= top-projects right Blurr ======= -->
+    <div class="right-blurr"></div>
+  </div>
+  <!-- ======= top-projects Both moving array container ======= -->
+  <div class="moving-array-container">
+    <!-- ======= top-projects top array ======= -->
+    <div class="top-array">
+      <div class="position-relative marquee-container">
+        <div class="marquee d-flex justify-content-around">
+          <span *ngFor="let item of topArray; let index = index"
+            ><i class="{{ item }} programming-language-icon"></i
+          ></span>
+        </div>
+        <div class="marquee marquee2 d-flex justify-content-around">
+          <span *ngFor="let item of topArray"
+            ><i class="{{ item }} programming-language-icon"></i
+          ></span>
+        </div>
+      </div>
+    </div>
+    <!-- ======= top-projects bottom array ======= -->
+    <div class="bottom-array">
+      <div class="position-relative marquee-container">
+        <div class="marquee d-flex justify-content-around">
+          <span *ngFor="let item of bottomArray"
+            ><i class="{{ item }} programming-language-icon"></i
+          ></span>
+        </div>
+        <div class="marquee marquee2 d-flex justify-content-around">
+          <span *ngFor="let item of bottomArray"
+            ><i class="{{ item }} programming-language-icon"></i
+          ></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

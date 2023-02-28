@@ -1,3 +1,5 @@
+/* Importing Bootstrap SCSS file. */
+@import "~bootstrap/scss/bootstrap";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 @import "./utility/utility.scss";
 @import "~aos/dist/aos.css";
@@ -184,6 +186,3 @@ button {
     transform: rotate(359deg);
   }
 }
-
-/* Importing Bootstrap SCSS file. */
-@import "~bootstrap/scss/bootstrap";
